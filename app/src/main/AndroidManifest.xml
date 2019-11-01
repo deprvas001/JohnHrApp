@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.development.johnhrapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.SortingJobSearch"></activity>
+        <activity android:name=".view.AddHoliday" />
+        <activity android:name=".view.ViewJobOne" />
+        <activity android:name=".view.EditProfile" />
+        <activity android:name=".view.EditPersonalInfo" />
+        <activity android:name=".view.ApplyJob" />
+        <activity android:name=".view.ViewSearchJob" />
+        <activity android:name=".view.ViewAppliedJob" />
+        <activity android:name=".view.ViewOfferedJob" />
+        <activity android:name=".view.NotificationShift" />
+        <activity android:name=".view.ViewCancelShift" />
+        <activity android:name=".view.ClockIn" />
+        <activity android:name=".view.CancelShift" />
+        <activity android:name=".view.ViewMyJob" />
+        <activity android:name=".view.MonthlyReport" />
+        <activity android:name=".view.Month" />
+        <activity android:name=".view.AddAvailability" />
+        <activity android:name=".view.MyStats" />
+        <activity android:name=".view.ShiftName" />
+        <activity android:name=".view.MonthShifts" />
+        <activity android:name=".view.AddPersonalInfo" />
+        <activity android:name=".view.EditBankInfo" />
+        <activity android:name=".view.AddExperience" />
+        <activity android:name=".view.SetupProfile" />
+        <activity android:name=".view.EditExperience" />
+        <activity android:name=".view.FaqScreen" />
+        <activity android:name=".view.HiddenJobs" />
+        <activity android:name=".view.SettingScreen" />
+        <activity android:name=".view.CancelJob" />
+        <activity android:name=".view.MyProfile" />
+        <activity android:name=".view.NotificationScreen" />
+        <activity android:name=".view.JobsScreen" />
+        <activity android:name=".view.HomeScreen" />
+        <activity android:name=".view.Help" />
+        <activity android:name=".view.ChangePassword" />
+        <activity android:name=".view.SignUpComplete" />
+        <activity android:name=".view.BankInfo" />
+        <activity android:name=".view.ResetPassword" />
+        <activity android:name=".view.ForgotScreen" />
+        <activity
+            android:name=".view.LoginScreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".view.SignUp" />
+        <activity android:name=".view.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

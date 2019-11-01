@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2964BD</color>
+    <color name="colorPrimaryDark">#173665</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="splash_background">#2964BD</color>
+    <color name="line">#dddddd</color>
+    <color name="edit_hint">#a09e9e</color>
+    <color name="edit_text">#4e4e4e</color>
+    <color name="navigation_color">#a0a0a0</color>
+    <color name="week_detail">#505050</color>
+    <color name="row_item_desc">#ababab</color>
+    <color name="tab_border">#e8e8e8</color>
+    <color name="notification_date">#aeaeae</color>
+    <color name="progress_bar_border">#d9d9d9</color>
+    <color name="my_profile_subtext">#989898</color>
+    <color name="edit_profile_value">#ececec</color>
+    <color name="available">#79eb51</color>
+    <color name="not_available">#d04741</color>
+    <color name="applied_leave">#278fb0</color>
+
+</resources>

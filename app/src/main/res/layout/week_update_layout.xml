@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+       >
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/shift_taken_tx"
+            android:layout_width="150dp"
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+            android:text="@string/shift_taken"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/shift_taken_value"
+            android:layout_width="wrap_content"
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+            android:text="05"
+            android:textSize="14dp"
+            android:layout_toRightOf="@id/shift_taken_tx"
+            />
+
+
+        <TextView
+            android:id="@+id/hour_work_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hours_work"
+            android:padding="2dp"
+            android:textSize="14dp"
+            android:layout_below="@id/shift_taken_value"
+            />
+
+        <TextView
+            android:id="@+id/hour_work_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:00"
+            android:textSize="14dp"
+            android:padding="2dp"
+            android:layout_toRightOf="@id/hour_work_title"
+            android:layout_below="@id/shift_taken_value"
+            />
+
+        <TextView
+            android:id="@+id/earning_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/earnings"
+            android:padding="2dp"
+            android:textSize="14dp"
+            android:layout_below="@id/hour_work_value"
+            />
+
+        <TextView
+            android:id="@+id/earning_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$56.00"
+            android:padding="2dp"
+            android:textSize="14dp"
+            android:layout_toRightOf="@id/earning_title"
+            android:layout_below="@id/hour_work_value"
+            />
+
+        <TextView
+            android:id="@+id/last_week_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/last_earning"
+            android:textSize="14dp"
+            android:padding="2dp"
+            android:layout_below="@id/earning_value"
+            />
+
+        <TextView
+            android:id="@+id/last_week_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$536.00"
+            android:textSize="14dp"
+            android:padding="2dp"
+            android:layout_toRightOf="@id/last_week_title"
+            android:layout_below="@id/earning_value"
+            />
+
+        <TextView
+            android:id="@+id/view_stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/last_week_value"
+            />
+
+        >
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/background_drawable">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/toolbar_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/shift_name"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/notification" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    tools:layout_editor_absoluteX="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="10dp"
+                            android:layout_gravity="center_vertical"
+                            app:srcCompat="@mipmap/google" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            >
+
+                            <TextView
+                                android:id="@+id/sales_txt"
+                                android:layout_width="150dp"
+                                android:padding="2dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/edit_text"
+                                android:text="@string/sales_person"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/sales_value"
+                                android:layout_width="match_parent"
+                                android:padding="2dp"
+                                android:layout_height="wrap_content"
+                                android:text="$2000"
+                                android:visibility="gone"
+                                android:gravity="center_horizontal"
+                                android:textSize="14dp"
+                                android:layout_toRightOf="@id/sales_txt"
+                                />
+
+                            <TextView
+                                android:id="@+id/date_value"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="09/10/2019"
+                                android:textSize="13dp"
+                                android:padding="2dp"
+                                android:textColor="@color/row_item_desc"
+                                android:layout_below="@id/sales_txt"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:padding="2dp"
+                                android:layout_height="wrap_content"
+                                android:text="07:00 hr"
+                                android:gravity="center_horizontal"
+                                android:textSize="14dp"
+                                android:layout_below="@id/sales_txt"
+                                android:layout_toRightOf="@id/date_value"
+                                />
+
+                            <TextView
+                                android:id="@+id/address_value"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="257 Chapel DriveFresh Meadows, NY 11365"
+                                android:textSize="13dp"
+                                android:textColor="@color/row_item_desc"
+                                android:padding="2dp"
+                                android:layout_below="@id/date_value"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/view"
+                                android:gravity="right"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:visibility="gone"
+                                android:layout_below="@id/address_value"
+                                />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            tools:layout_editor_absoluteX="8dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/week_detail"
+                    android:text="@string/earned"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/row_item_desc"
+                    android:text="$200" />
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:padding="10dp"
+                    android:background="@color/edit_profile_value"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/week_detail"
+                    android:text="@string/shift_wage"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/row_item_desc"
+                    android:text="$200" />
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:padding="10dp"
+                    android:background="@color/edit_profile_value"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/week_detail"
+                    android:text="@string/shift_premimum"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/row_item_desc"
+                    android:text="$25" />
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:padding="10dp"
+                    android:background="@color/edit_profile_value"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/week_detail"
+                    android:text="@string/schedule_hour"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/row_item_desc"
+                    android:text="07:00 hr" />
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:padding="10dp"
+                    android:background="@color/edit_profile_value"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/week_detail"
+                    android:text="@string/clock_time"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/row_item_desc"
+                    android:text="01:00 PM" />
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:padding="10dp"
+                    android:background="@color/edit_profile_value"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/week_detail"
+                    android:text="@string/clock_out_time"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/row_item_desc"
+                    android:text="10:00 PM" />
+
+            </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</layout>

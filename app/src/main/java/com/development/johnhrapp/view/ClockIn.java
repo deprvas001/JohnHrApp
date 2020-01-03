@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -37,8 +38,19 @@ ActivityClockInBinding clockInBinding;
                 break;
 
             case R.id.clock_in:
-               startActivity(new Intent(this,ViewMyJob.class));
+                Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(cameraIntent, 1);
+             //  startActivity(new Intent(this,ViewMyJob.class));
                 break;
+        }
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            Bitmap image = (Bitmap) data.getExtras().get("data");
+            // do whatever you want with the image now
+            startActivity(new Intent(this, ViewMyJob.class));
         }
     }
 

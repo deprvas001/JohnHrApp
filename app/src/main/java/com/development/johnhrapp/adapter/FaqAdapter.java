@@ -56,8 +56,6 @@ public class FaqAdapter extends RecyclerView.Adapter<FaqAdapter.MyViewHolder> {
             }
         });
 
-
-
     }
 
     @Override

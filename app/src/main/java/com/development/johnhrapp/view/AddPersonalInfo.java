@@ -3,6 +3,7 @@ package com.development.johnhrapp.view;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -20,6 +21,7 @@ ActivityAddPersonalInfoBinding addPersonalInfoBinding;
 
     private void setClickListener(){
         addPersonalInfoBinding.back.setOnClickListener(this);
+        addPersonalInfoBinding.btnNext.setOnClickListener(this);
     }
 
 
@@ -28,6 +30,10 @@ ActivityAddPersonalInfoBinding addPersonalInfoBinding;
         switch (view.getId()){
             case R.id.back:
                 finish();
+                break;
+
+            case R.id.btn_next:
+                startActivity(new Intent(this,SignUpComplete.class));
                 break;
         }
     }

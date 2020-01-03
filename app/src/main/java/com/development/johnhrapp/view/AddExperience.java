@@ -3,6 +3,7 @@ package com.development.johnhrapp.view;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -80,7 +81,7 @@ ActivityAddExperienceBinding addExperienceBinding;
                 break;
 
             case R.id.btn_save:
-                finish();
+               startActivity(new Intent(this,AddPersonalInfo.class));
                 break;
         }
     }

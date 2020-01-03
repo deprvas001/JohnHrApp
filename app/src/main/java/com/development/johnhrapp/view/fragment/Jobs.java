@@ -66,7 +66,7 @@ public class Jobs extends Fragment {
         Adapter adapter = new Adapter(getChildFragmentManager());
         adapter.addFragment(new MyJobs(), "MY JOBS");
         adapter.addFragment(new AppliedJob(), "APPLIED JOBS");
-        adapter.addFragment(new MyJobs(), "OFFERED JOBS");
+        adapter.addFragment(new OfferJobFragment(), "OFFERED JOBS");
         adapter.addFragment(new MyJobs(), "SAVED JOBS");
         viewPager.setAdapter(adapter);
     }

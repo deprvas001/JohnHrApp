@@ -37,8 +37,6 @@ ActivityMyStatsBinding statsBinding;
             case R.id.menu:
                 startActivity(new Intent(this,NotificationScreen.class));
                 break;
-
-
         }
     }
 
